@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
     <link rel="stylesheet" href="css/epiviz.css">
     <link rel="icon" type="image/png" sizes="16x16" href="epiviz-favicon.png">
+    <style>
+      #otherWSCards {
+        padding: 18px;
+        display: none;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .collapsible {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body class="bg-body text-body font-body">
     <div class="container mx-auto px-4"> 
@@ -54,7 +66,7 @@
         <div id="workspaceCards" class="flex flex-wrap -mx-4">
         </div>
 
-        <h2 class="text-4xl mb-2 leading-tight font-heading">Workspaces for datasets from HMP2Data package</h2>
+        <span class="collapsible text-4xl mb-2 leading-tight font-heading">Datasets from HMP2Data package</span><span>(click to show)</span>
         <div id="otherWSCards" class="flex flex-wrap -mx-4">
         </div>
       </section>
@@ -69,6 +81,20 @@
       </footer>
     </div>
     <script src="js/main.js"></script>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
 
+      for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var wslist = document.querySelector("#otherWSCards")
+          if (wslist.style.display === "flex") {
+            wslist.style.display = "none";
+          } else {
+            wslist.style.display = "flex";
+          }
+        });
+      } 
+    </script>
   </body>
 </html>
