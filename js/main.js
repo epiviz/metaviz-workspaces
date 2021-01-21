@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // </span>
     ws_dom +=
       `
-            <div class="w-full lg:w-1/3 px-4 mb-4 lg:mb-2">
+            <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-2">
                 <div class="h-full border rounded shadow">
                     <div class="flex items-center justify-between py-3 px-4 border-b">
                         <h3 class="text-lg font-heading">` +
@@ -249,5 +249,5 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
   });
 
-  document.querySelector("#otherWSCards").innerHTML = ws_dom;
+  // document.querySelector("#otherWSCards").innerHTML = ws_dom;
 })();

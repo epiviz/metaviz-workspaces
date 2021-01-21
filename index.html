@@ -4,8 +4,8 @@
     <title>Metaviz HMP2 Workspaces</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Epiviz is an interactive visualization tool for functional genomics data. It supports genome navigation like other genome browsers, but allows multiple visualizations of data within genomic regions using scatterplots, heatmaps and other user-supplied visualizations.">
-    <meta name="author" content="Epiviz">
+    <meta name="description" content="Metaviz is an interactive visualization tool for 16S metagenomics data.">
+    <meta name="author" content="Metaviz">
     <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
     <link rel="stylesheet" href="css/epiviz.css">
     <link rel="icon" type="image/png" sizes="16x16" href="epiviz-favicon.png">
@@ -63,12 +63,12 @@
     
       <section class="py-8 px-4">
         <h2 class="text-4xl mb-2 leading-tight font-heading">HMP2 Workspaces</h2>
-        <div id="workspaceCards" class="flex flex-wrap -mx-4">
+        <div id="workspaceCards" class="flex flex-col items-center m-28">
         </div>
 
-        <span class="collapsible text-4xl mb-2 leading-tight font-heading">Datasets from HMP2Data package</span><span>(click to show)</span>
+        <!-- <span class="collapsible text-4xl mb-2 leading-tight font-heading">Datasets from HMP2Data package</span><span>(click to show)</span>
         <div id="otherWSCards" class="flex flex-wrap -mx-4">
-        </div>
+        </div> -->
       </section>
     
       <footer class="flex flex-wrap items-center justify-between p-4 border-t">
@@ -81,7 +81,7 @@
       </footer>
     </div>
     <script src="js/main.js"></script>
-    <script>
+    <!-- <script>
       var coll = document.getElementsByClassName("collapsible");
 
       for (var i = 0; i < coll.length; i++) {
@@ -95,6 +95,6 @@
           }
         });
       } 
-    </script>
+    </script> -->
   </body>
 </html>
